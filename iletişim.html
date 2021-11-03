@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+    </head>
+    <body style="background-color: darkgrey;">
+        <form action="iletişim.php" method="POST">
+        <table >
+            <!-- logo ve başlık-->
+            <tr>
+                <td><img src="saü.png" style="width: 50%; border:solid;border-color: darkkhaki;"></td>
+                <td>
+                    <h1 style="text-align:center;color:darkblue">Sakarya Üniversitesi</h1>
+                    <h2 style="text-align:center;color:darkblue">Bilgisayar Mühendisliği</h2>
+                </td>
+            </tr>
+            <!--bağlantılar ve içerik-->
+            <tr height="300">
+                <td valign="top">
+                    <a href="anasayfa.html" style="text-decoration:none;">anasayfa</a><br>
+                    <a href="iletişim.html">iletişim</a><br>
+                    <a href="bize ulaşın.html">bize ulaşın</a>
+                </td>
+                <td valign="top">
+                    <h4 style="background-color: rgb(232, 255, 127); color:rgb(228, 231, 60);  text-align:center;
+                    font-size:20pt; font-weight:bold;">iletişim</h4>
+                    <hr>
+                    <form action="iletişim.php" method="GET"></form>
+                        <label>adı soyadı:</label><input type="text" name="adsoyad" required><br><br>
+                        <label>e posta:</label><input type="text" name="email" placeholder="e mail griniz"><br><br>
+                        <label>telefon:</label><input type="text" name="tel" size=10><br><br>
+                        <label>cinsiyet</label>
+                        <input type="radio" name="cinsiyet" value="E" selected>erkek
+                        <input type="radio" name="cinsiyet" value="K">kadın<br><br>
+                        <label>bulunduğu il</label>
+                        <select name="il">
+                            <option value="0">&#706;seçiniz&#707</option>
+                            <option value="34">istanbul</option>
+                            <option value="41">kocaeli</option>
+                            <option value="54">sakarya</option>
+                            <option value="35">izmir</option>
+                            <option value="06">ankara</option>
+                        </select><br>
+                        <label>aldığı dersler</label><br>
+                        <input type="checkbox" name="web" value="webb">web teknelojileri<br>
+                        <input type="checkbox" name="ndp" value="ndp">nesneye dayalı programlama<br>
+                        <input type="checkbox" name="mat" value="mat">matematik<br><br>
+
+                        <label>üni</label><br>
+                        <input type="text" list="universiteler">
+                      <datalist id="universiteler">
+                      <option value="sau">Sakarya Üniveristesi</option>
+                       <option value="subu">Sakarya Uyg. Bil. Üniversitesi</option>
+                       <option value="kou">Kocaeli Üniversitesi</option>
+                       <option value="itu">İstanbul Teknik Üniversitesi</option>
+                        </datalist>
+
+                        <input type="submit" value="gönder">
+                        <input type="reset" value="temizle">
+
+                    </form>
+
+                    </td>
+
+            </tr>
+            <!--alt bilgi-->
+            <tr>
+                <td colspan="2">@Tüm hakkı saklıdır-'2020-2021 bahar dönemi'</td>
+                
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
